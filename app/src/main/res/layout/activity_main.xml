@@ -7,12 +7,157 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEgor"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxMary"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMary"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxNastya"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEgor" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNastya"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxNatasha"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMary" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNatasha"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student4"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxStas"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNastya" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="58dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNatasha" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNadya"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student6"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxEgor"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAnton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student7"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxNadya"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNadya" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSashaK"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student8"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxDima"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDima" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSashaI"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student9"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxAnton"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAnton" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDima"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/student10"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxSashaI"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSashaI" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="161dp"
+        android:text="@string/btn_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxYa" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="58dp"
+        android:text="@string/student11"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxStas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxYa"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="116dp"
+        android:text="@string/not_student"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSashaK" />
 
 </android.support.constraint.ConstraintLayout>
