@@ -25,23 +25,26 @@ class GenerateRandomStudentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_generate_random_student)
 
         students = intent.getStringArrayListExtra(EXTRA_STUDENTS_ARRAYLIST) as ArrayList<String>
-        //println(students)
+        println(students)
 
         generateButton = findViewById(R.id.buttonGenerate)
         studentTextView = findViewById(R.id.textViewRandomStudent)
         pic = findViewById(R.id.imageView)
 
         generateButton.setOnClickListener {
-            val randomStudent = students.shuffled().first()
-            studentTextView.text = randomStudent
-            val mDrawableName = randomStudent.lowercase()
-            val resID: Int = pic.getContext().getResources()
-                .getIdentifier(mDrawableName, "drawable", pic.getContext().getPackageName())
-            pic.setImageResource(resID)
+            if (students.isNotEmpty()) {
+                val randomStudent = students.shuffled().first()
+                println(randomStudent)
+                studentTextView.text = randomStudent
+                val mDrawableName = randomStudent.lowercase()
+                val resID: Int = pic.context.resources
+                    .getIdentifier(mDrawableName, "drawable", pic.context.packageName)
+                pic.setImageResource(resID)
+            }
         }
 
         backButton = findViewById(R.id.button2)
-        backButton.setOnClickListener{
+        backButton.setOnClickListener {
             this.finish()
         }
 
