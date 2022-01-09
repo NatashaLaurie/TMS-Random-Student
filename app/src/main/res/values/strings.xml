@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Random Student</string>
+    <string name="title">Select who is present</string>
+    <string name="student1">Egor</string>
+    <string name="student2">Mary</string>
+    <string name="student3">Nastya</string>
+    <string name="student4">Natasha</string>
+    <string name="student5">Stas</string>
+    <string name="student6">Nadya</string>
+    <string name="student7">Anton</string>
+    <string name="student8">Alex</string>
+    <string name="student9">Alexandr</string>
+    <string name="student10">Dima</string>
+    <string name="student11">Dasha</string>
+    <string name="not_student">Ya</string>
+    <string name="btn_select">ОК</string>
+    <string name="btn_generate">Select student</string>
+    <string name="btn_back">mark those present</string>
+    <string name="studentPhoto">photo</string>
+
 </resources>
